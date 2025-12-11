@@ -11,11 +11,11 @@ The developer shall not be liable for any losses or liabilities arising from the
 
 ![媒体保护工具演示](https://github.com/copyangle/SS_tools/blob/main/test.png "鸭子图媒体保护工具")
 
-主要功能：
+## 主要功能：
 - 媒体内容保护：将图片/视频隐藏在卡通鸭子图中，可选密码保护
 - 媒体内容提取：从鸭子图中提取原始图片/视频数据
 
-Example:
+## Example:
 隐藏保护图片和视频工作流
 ![媒体保护工具演示](https://github.com/copyangle/SS_tools/blob/main/Workflow%20Example/encode_img.png "鸭子图媒体保护工具")
 ![媒体保护工具演示](https://github.com/copyangle/SS_tools/blob/main/Workflow%20Example/encode_video.png "鸭子图媒体保护工具")
