@@ -25,8 +25,15 @@ Example:
 ![媒体保护工具演示](https://github.com/copyangle/SS_tools/blob/main/Workflow%20Example/decode_video.png "鸭子图媒体保护工具")
 
 
+## 本地节点部署方法
+- 方法1：
+  - confyUI节点放置目录：`ComfyUI/custom_nodes/sstool/`
+  - pip install -r requirements.txt
 
-confyUI节点放置目录：`ComfyUI/custom_nodes/sstool/`
+- 方法2：
+  - cd `ComfyUI/custom_nodes/`
+  - git clone git@github.com:copyangle/SS_tools.git
+  - pip install -r requirements.txt
 
 **组件概览**
 - confyUI节点：
@@ -59,6 +66,8 @@ confyUI节点放置目录：`ComfyUI/custom_nodes/sstool/`
   - `audio`（`AUDIO`）：当载荷为视频时可恢复音频
   - `file_path`（`STRING`）：磁盘上的还原文件路径
   - `fps`（`INT`）：当载荷为视频时的帧率
+
+## 本地保护/提取工具
 
 **duck_encoder.exe**
 - 作用：在本地将媒体文件编码为鸭子图 
