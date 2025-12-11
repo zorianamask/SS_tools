@@ -15,6 +15,8 @@ The developer shall not be liable for any losses, liabilities, or legal risks ar
 ## Main Functions:
 - Media content protection: Hide images/videos in cartoon duck images, with optional password protection
 - Media content extraction: Extract original image/video data from duck images
+- Provides a ComfyUI workflow for the aforementioned functions
+- Provides local EXE files for the aforementioned functions
 
 ## Example:
 Workflow for hiding and protecting images and videos

@@ -20,6 +20,8 @@ The developer shall not be liable for any losses or liabilities arising from the
 ## 主要功能：
 - 媒体内容保护：将图片/视频隐藏在卡通鸭子图中，可选密码保护
 - 媒体内容提取：从鸭子图中提取原始图片/视频数据
+- 提供以上功能的ConfyUI工作流
+- 提供以上功能的本地exe文件
 
 ## Example:
 隐藏保护图片和视频工作流
