@@ -36,6 +36,7 @@ Workflow for extracting images and videos
 - Method 2:
   - cd `ComfyUI/custom_nodes/`
   - git clone git@github.com:copyangle/SS_tools.git
+  - cd SS_tools
   - pip install -r requirements.txt
 
 **Component Overview**

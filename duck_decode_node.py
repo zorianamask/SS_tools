@@ -118,9 +118,18 @@ class DuckDecodeNode:
         return {
             "required": {
                 "image": ("IMAGE",),
+
             },
             "optional": {
                 "password": ("STRING", {"default": "", "multiline": False}),
+                "Notes": ("STRING", {
+                    "multiline": True,  # 核心：开启多行模式
+                    "default": "使用方法：https://github.com/copyangle/SS_tools\n支持图片/视频隐写保护",
+                    # 多行默认内容
+                    "placeholder": "使用方法：https://github.com/copyangle/SS_tools",  # 输入提示（可选）
+                    "dynamicPrompts": False,  # 关闭动态提示（按需开启）
+                    "rows": 2,  # 可选：指定输入框默认行数（视觉效果）
+                }),
             },
         }
 
@@ -129,7 +138,7 @@ class DuckDecodeNode:
     FUNCTION = "decode"
     CATEGORY = CATEGORY
 
-    def decode(self, image: torch.Tensor, password: str = ""):
+    def decode(self, image: torch.Tensor, password: str = "",Notes: str = ""):
         pil = _tensor_to_pil(image)
         arr = np.array(pil.convert("RGB")).astype(np.uint8)
         header = None

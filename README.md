@@ -43,6 +43,7 @@ The developer shall not be liable for any losses or liabilities arising from the
 - 方法2：
   - cd `ComfyUI/custom_nodes/`
   - git clone git@github.com:copyangle/SS_tools.git
+  - cd SS_tools
   - pip install -r requirements.txt
 
 **组件概览**

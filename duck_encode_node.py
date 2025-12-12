@@ -138,8 +138,8 @@ class DuckHideNode:
                 "compress": ([2, 6, 8], {"default": 2}),
                 "Notes": ("STRING", {
                     "multiline": True,        # 核心：开启多行模式
-                    "default": "# SS媒体内容工具说明\n1. 支持图片/视频隐写\n2. compress: 2/6/8 选择压缩方式，8为最小体积",  # 多行默认内容
-                    "placeholder": "请输入备注/说明/配置（支持多行）",  # 输入提示（可选）
+                    "default": "使用方法：https://github.com/copyangle/SS_tools\n1. 支持图片/视频隐写保护\n2. compress: 2/6/8 选择压缩方式，8为最小体积",  # 多行默认内容
+                    "placeholder": "使用方法：https://github.com/copyangle/SS_tools",  # 输入提示（可选）
                     "dynamicPrompts": False,  # 关闭动态提示（按需开启）
                     "rows": 3,                # 可选：指定输入框默认行数（视觉效果）
                 }),
