@@ -18,6 +18,11 @@ The developer shall not be liable for any losses, liabilities, or legal risks ar
 - Provides a ComfyUI workflow for the aforementioned functions
 - Provides local EXE files for the aforementioned functions
 
+## Related Links:
+- Video Tutorial: https://www.bilibili.com/video/BV1w6qYBREzV
+- Ready-to-Use Workflow: https://www.runninghub.cn/post/2000762471365439490
+- Wan2.2Remix Image-to-Video with Complete Encoding Demo: https://www.runninghub.cn/ai-detail/2000755012961792002
+
 ## Example:
 Workflow for hiding and protecting images and videos
 ![Media Protection Tool Demo](https://github.com/copyangle/SS_tools/blob/main/Workflow%20Example/encode_img.png "Duck Image Media Protection Tool")
@@ -30,10 +35,6 @@ Workflow for extracting images and videos
 
 ## Local Node Deployment Method
 - Method 1:
-  - ConfyUI node placement directory: `ComfyUI/custom_nodes/sstool/`
-  - pip install -r requirements.txt
-
-- Method 2:
   - cd `ComfyUI/custom_nodes/`
   - git clone git@github.com:copyangle/SS_tools.git
   - cd SS_tools
