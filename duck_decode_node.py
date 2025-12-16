@@ -225,21 +225,22 @@ class DuckDecodeNode:
                 arr = np.stack(frames, axis=0).astype(np.float32) / 255.0
                 img_tensor = torch.from_numpy(arr)
             if clip.audio is not None:
-                try:
-                    sr_attr = getattr(clip.audio, "fps", None)
-                    sr = int(round(sr_attr)) if sr_attr else 44100
-                    audio_np = clip.audio.to_soundarray(fps=sr)
-                    # 归一化处理
-                    max_val = np.max(np.abs(audio_np))
-                    if max_val > 0:
-                        audio_np = audio_np / max_val
+                # try:
+                sr_attr = getattr(clip.audio, "fps", None)
+                sr = int(round(sr_attr)) if sr_attr else 44100
+                audio_np = clip.audio.to_soundarray(fps=sr)
+                # 归一化处理
+                max_val = np.max(np.abs(audio_np))
+                if max_val > 0:
+                    audio_np = audio_np / max_val
 
-                    if len(audio_np.shape) == 1:
-                        audio_np = np.expand_dims(audio_np, axis=1)
-                    wf = torch.from_numpy(audio_np.T.astype(np.float32)).unsqueeze(0)
-                    audio_out = {"waveform": wf, "sample_rate": sr}
-                except Exception:
-                    audio_out = None
+                if len(audio_np.shape) == 1:
+                    audio_np = np.expand_dims(audio_np, axis=1)
+                wf = torch.from_numpy(audio_np.T.astype(np.float32)).unsqueeze(0)
+                audio_out = {"waveform": wf, "sample_rate": sr}
+                # except Exception as e:
+                #     audio_out = None
+                #     print(e)
             clip.close()
         else:
             img_tensor = torch.zeros((1, 1, 1, 3), dtype=torch.float32)
@@ -248,4 +249,4 @@ class DuckDecodeNode:
 
 
 NODE_CLASS_MAPPINGS = {"DuckDecodeNode": DuckDecodeNode}
-NODE_DISPLAY_NAME_MAPPINGS = {"DuckDecodeNode": "SSuper-SecureMediaProtection dec媒体内容保护解码V1.0"}
+NODE_DISPLAY_NAME_MAPPINGS = {"DuckDecodeNode": "SSuper-SecureMediaProtection dec媒体内容保护解码V1.1"}

@@ -36,11 +36,7 @@ The developer shall not be liable for any losses or liabilities arising from the
 
 
 ## 本地节点部署方法
-- 方法1：
-  - confyUI节点放置目录：`ComfyUI/custom_nodes/sstool/`
-  - pip install -r requirements.txt
-
-- 方法2：
+- 部署：
   - cd `ComfyUI/custom_nodes/`
   - git clone git@github.com:copyangle/SS_tools.git
   - cd SS_tools
