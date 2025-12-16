@@ -13,7 +13,8 @@
 如果您使用或者部署此项目即视为同意。
 
 This project is a completely non-profit initiative. 
-The developer shall not be liable for any losses or liabilities arising from the use of this project, and all relevant legal risks shall be borne by the users themselves. Your use or deployment of this project shall constitute your acceptance of the above terms.
+The developer shall not be liable for any losses or liabilities arising from the use of this project, and all relevant legal risks shall be borne by the users themselves. 
+Your use or deployment of this project shall constitute your acceptance of the above terms.
 
 ![媒体保护工具演示](https://github.com/copyangle/SS_tools/blob/main/test.png "鸭子图媒体保护工具")
 
