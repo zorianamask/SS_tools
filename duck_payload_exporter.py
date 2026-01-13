@@ -160,7 +160,7 @@ def _embed_payload_lsb(img: Image.Image, file_header: bytes, lsb_bits: int) -> I
     if groups > len(idxs):
         raise ValueError("Data too large, capacity exceeded. 数据过大，鸭子图容量不够。请使用更小的文件。")
     sel = idxs[:groups]
-    flat[sel] = (flat[sel] & (~mask)) | vals
+    flat[sel] = (flat[sel] & (255 ^ mask)) | vals
     arr = flat.reshape(arr.shape)
     if skip_w > 0 and skip_h > 0:
         src_w = max(0, arr.shape[1] - skip_w)
